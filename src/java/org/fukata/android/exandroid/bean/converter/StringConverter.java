@@ -10,7 +10,6 @@ import java.lang.reflect.Method;
  */
 public class StringConverter implements Converter {
 
-	@Override
 	public Object convert(Class<?> type, Object value) {
 		Object converted = value;
 		
