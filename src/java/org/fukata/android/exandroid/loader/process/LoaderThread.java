@@ -2,7 +2,6 @@ package org.fukata.android.exandroid.loader.process;
 
 import java.util.concurrent.LinkedBlockingQueue;
 
-
 import android.os.Process;
 import android.util.Log;
 
@@ -42,16 +41,6 @@ public class LoaderThread extends Thread {
 			try {
 				// Wait for the next request
 				LoadRequest request = mQueue.take();
-
-				// If there are a bunch of requests already waiting, then
-				// skip all but the most recent request.
-				while (!mQueue.isEmpty()) {
-					// Let the request know that it was skipped
-					request.skipRequest(mLoader);
-
-					// Skip to the next request
-					request = mQueue.take();
-				}
 
 				// シャットダウンリクエストの場合、停止
 				if (request instanceof ShutdownRequest) {
