@@ -2,7 +2,9 @@
 <classpath>
 	<classpathentry kind="src" path="src/java"/>
 	<classpathentry kind="src" path="src/test"/>
-	<classpathentry kind="lib" path="/home/tatsuya/android/sdk/android-sdk-linux_86/platforms/android-8/android.jar"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
